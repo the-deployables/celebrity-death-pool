@@ -1,0 +1,60 @@
+Celeb Death Tracker
+
+Users submit predictions for the next celebrity death, with name, cause of death and date
+
+Predictions go into a database, that includes already dead folks to check against
+
+Last 3-5 predictions are displayed on the main page.
+
+Latest death(s) displayed
+
+Conspiracy theories involving celebs
+
+Twitter/RSS feed with celeb “shocking news”/TMZ style
+
+
+
+* Use a Node and Express Web Server;
+
+* Be backed by a MySQL Database an ORM (not necessarily Sequelize);
+
+* Have both GET and POST routes for retrieving and adding new data;
+
+* Be deployed using Heroku (with Data);
+
+* Utilize at least one new library, package, or technology that we haven’t discussed;
+Vue.js?
+
+* Have a polished frontend / UI;
+
+* Have folder structure that meets MVC Paradigm;
+
+* Meet good quality coding standards (indentation, scoping, naming).
+
+### Suggestions
+
+Your project _should_:
+
+* Incorporate Basic Testing Framework, see [Project Suggestions](../Suggestions/README.md);
+
+* Use Handlebars for Server-Side Templating
+
+* Incorporate Authentication (JSON Web Tokens, Sessions, Etc.)
+
+* Use an existing public dataset to power the database
+
+* Create a migration strategy for sharing data across team members.
+
+
+### Testing Suggestions
+
+* Set up Karma so you can run your tests as you develop.
+
+* Prior to implementing a feature, use Nightmare to write a functional test for it.
+
+* Prior to implementing a function, use Mocha and Chai to write unit tests against it.
+
+* Run your tests prior to committing your code so you can be sure nothing breaks between commits.
+
+* **Non-Obligatory Bonus**: If you're confident and feel like you have some time to tinker, set up [Travis CI](https://travis-ci.org/). This will automatically run your tests whenever you or any of your team members makes a commit. 
+1 Comment Collapse
