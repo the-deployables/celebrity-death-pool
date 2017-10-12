@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -7,13 +7,44 @@
         <meta name="description" content="">
     </head>
     <body>
- 
-        <p><h1>Hello world! This is a dummy Homepage</h1></p>
-		<form method="post" action="/add-guess">
+ 		<section><h1>Hello world!</h1></section>
+		<section>
+			<h2>Guess which celeb will kick the bucket next!</h2>
+			<form method="post" action="/add-guess">
 		    <input type="text" name="name">
 		    <input type="text" name="causeofdeath">
 		    <input type="date" name="deathdate">
 		    <input type="submit">
 		</form>
+		</section>
+		<section>
+			<h2>Latest Guesses</h2>
+			<table>
+				<tr>
+				   <th></th>
+				   <th>Name</th>
+				   <th>Cause of Death</th>
+				   <th>Date</th>
+				 </tr>
+				 <tr>
+				 	<td>[picture]</td>
+				 	<td>[name]</td>
+				 	<td>[cause]</td>
+				 	<td>[date]</td>
+				 </tr>
+				 <tr>
+				 	<td>[picture]</td>
+				 	<td>[name]</td>
+				 	<td>[cause]</td>
+				 	<td>[date]</td>
+				 </tr>
+				 <tr>
+				 	<td>[picture]</td>
+				 	<td>[name]</td>
+				 	<td>[cause]</td>
+				 	<td>[date]</td>
+				 </tr>
+			</table>
+		</section>
 	</body>
 </html>

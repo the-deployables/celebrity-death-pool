@@ -48,6 +48,11 @@ Your project _should_:
 * Create a migration strategy for sharing data across team members.
 
 
+###nice to haves
+
+* Check wikipedia to see if celeb is already dead
+
+
 ### Testing Suggestions
 
 * Set up Karma so you can run your tests as you develop.
