@@ -1,0 +1,26 @@
+{
+  "name": "celebrity-death-pool",
+  "version": "1.0.0",
+  "description": "celeberity death pool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-deployables/celebrity-death-pool.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the-deployables/celebrity-death-pool/issues"
+  },
+  "homepage": "https://github.com/the-deployables/celebrity-death-pool#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mysql2": "^1.4.2",
+    "sequelize": "^4.13.8"
+  }
+}
