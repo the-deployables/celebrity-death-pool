@@ -56,19 +56,21 @@ app.post("/add-guess", function(req, res) {
 	else {
 	    console.log(userguess);
 	    res.send('Great Success!');
-	    //check against database to see if already exists. If false, proceed?
-	    //associate user ID to guess?
+	    
+	    //?check against database to see if already exists. If false, proceed?
+	    //?associate user ID to guess?
+	    
 	    //write guess to database
-
 	    db.Celebrity.create({
 			name: userguess.name,
 			causeofdeath: userguess.causeofdeath,
 			deathdate: userguess.deathdate
 			}).then(function(guess) {
-			// We have access to the new todo as an argument inside of the callback function
 			res.json(guess);
 			});
-	    //redirect to page with users guesses displayed
+	    //redirect to page with user's guesses displayed
+
+
 	}
 });
 
