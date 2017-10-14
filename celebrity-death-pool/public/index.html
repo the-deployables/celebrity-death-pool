@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>C E L E B R I T Y - D E A T H - P O O L</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body background="../images/darkness.png" style="height: 100%">
+  <div class="modal fade">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Welcome to Celebrity Death Pool!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Ever wondered during a movie on Lifetime if that actor from the eighties is still alive! Now you don't have to! We have an updated database of all celebrities that have met their maker, and give you the chance to make a predicition for who will make their next home Forest Lawn Memorial Park!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Okay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img alt="Brand" src="..."> </a>           
+          </div>
+      
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Predictions</a></li>
+              <li><a href="#">Obituaries</a></li>
+              <li><a href="#">Scoop or Spoof?</a></li>
+              
+            </ul>
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Is this celeb dead?">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+          </div>
+        </div>
+      </nav>-->
+
+      <div class="container-fluid" style="margin-top:20px">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="panel panel-default">
+              <div class="panel-heading">Latest Predictions</div>
+              <div class="panel-body">
+                <p>Latest Predictions from people who have nothing else better to do than think 
+                  about who is gonna die next. Better not pick Betty White, you jerk!</p>
+              </div>
+            
+              <!-- Table -->
+              <table class="table">
+                  <tr>
+                      <th>Celebrity</th>
+                      <th>Prediction Date</th> 
+                      <th>Cause of Death</th>
+                      <th>Submitted By</th>
+                    </tr>
+                    <tr>
+                        <td>Kirk Cameron</td>
+                        <td>March 5, 2017</td> 
+                        <td>Ham Sandwich</td>
+                        <td>Yo Momma</td>
+                      </tr>        
+              </table>
+            </div>
+          </div>  
+          <div class="col-md-4">                
+            <div class="panel panel-default">
+                <div class="panel-heading">Celebrity RSS Feed</div>
+                <div class="panel-body">
+                   Some shiz about celebs
+                </div>
+            </div>             
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><strong>Make a Prediction</strong></h3>
+                </div>
+                <div class="panel-body">
+                  <form method="POST" role="form">
+      
+                    <div class="form-group">
+                      <label for="celeb-name">Celeb Name</label>
+                      <input type="text" class="form-control" id="celeb-name">
+                    </div>
+      
+                    <div class="form-group">
+                      <label for="prediction-date">Prediction Date</label>
+                      <input type="text" class="form-control" id="prediction-date">
+                    </div>
+      
+                    <div class="form-group">
+                      <label for="cause-death">Cause of Death</label>
+                      <input type="text" class="form-control" id="cause-death">
+                    </div>
+      
+                    <div class="form-group">
+                      <label for="user-name">Your Name</label>
+                      <input type="text" class="form-control" id="user-name">
+                    </div>
+      
+                  </form>
+                  <br>
+                  <div class="text-right">
+                    <button type="submit" class="btn btn-primary btn-md" id="add-btn">Add My Prediction</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body" style="text-align:center; font-size:24pt">
+                      In Memoriam
+                      <img src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwieptf4qvDWAhUE6yYKHdFFBsIQjRwIBw&url=https%3A%2F%2Fwww.newyorker.com%2Fculture%2Fculture-desk%2Ffree-falling-with-tom-petty&psig=AOvVaw0lEIBje1kROr0y9aOBwI-P&ust=1508078105509330"
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+<!-- Ticker Scroll -->
+<!--       <div class="row">
+        <div class="col-lg-12">
+            <CENTER> 
+                <FORM NAME="marquee1"> 
+                <INPUT NAME="text" SIZE=300
+                VALUE="Here is some news about dead celebrities. I guess you have taken the time out of your day to read this. Congratulations. SNAPE KILLED DUMBLEDORE! PETER PETTIGREW IS SCABBERS! If you didn't know that by now, that's your own fault. "
+                > 
+                </FORM> 
+                </CENTER>
+                <SCRIPT> 
+                <!-- 
+                /*Text box marquee by Dave Methvin,
+                Windows Magazine
+                May be used/modified if credit line is
+                retained*/
+                ScrollSpeed = 75
+                ScrollChars = 1
+                function ScrollMarquee() {
+                window.setTimeout('ScrollMarquee()',ScrollSpeed);
+                
+                var msg = document.marquee1.text.value; 
+                document.marquee1.text.value =
+                msg.substring(ScrollChars) +
+                msg.substring(0,ScrollChars); 
+                } 
+                ScrollMarquee()
+                
+                </SCRIPT>
+        </div>
+      </div>//-->
+</body>

@@ -1,0 +1,13 @@
+Celeb Death Tracker
+
+Users submit predictions for the next celebrity death, with name, cause of death and date
+
+Predictions go into a database, that includes already dead folks to check against from a public db
+
+Last 3-5 predictions are displayed on the main page.
+
+Latest death(s) displayed in a news ticker format
+
+Conspiracy theories involving celebs (Reddit-style)
+
+Twitter/RSS feed with celeb “shocking news”/TMZ style
