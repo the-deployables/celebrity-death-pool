@@ -3,48 +3,24 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Test Home</title>
+        <title>Celeb Death Pool</title>
         <meta name="description" content="">
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
     <body>
  		<section><h1>Hello world!</h1></section>
 		<section>
 			<h2>Guess which celeb will kick the bucket next!</h2>
-			<form method="post" action="/add-guess">
-		    <input type="text" name="name">
-		    <input type="text" name="causeofdeath">
-		    <input type="date" name="deathdate">
-		    <input type="submit">
+			<form method="post" id="deathForm">
+		    <input type="text" name="name" id="name">
+		    <input type="text" name="causeofdeath" id="causeofdeath">
+		    <input type="date" name="deathdate" id="deathdate">
+		    <button type="submit" class="sumbit">Submit</button>
 		</form>
 		</section>
 		<section>
-			<h2>Latest Guesses</h2>
-			<table>
-				<tr>
-				   <th></th>
-				   <th>Name</th>
-				   <th>Cause of Death</th>
-				   <th>Date</th>
-				 </tr>
-				 <tr>
-				 	<td>[picture]</td>
-				 	<td>[name]</td>
-				 	<td>[cause]</td>
-				 	<td>[date]</td>
-				 </tr>
-				 <tr>
-				 	<td>[picture]</td>
-				 	<td>[name]</td>
-				 	<td>[cause]</td>
-				 	<td>[date]</td>
-				 </tr>
-				 <tr>
-				 	<td>[picture]</td>
-				 	<td>[name]</td>
-				 	<td>[cause]</td>
-				 	<td>[date]</td>
-				 </tr>
-			</table>
+			
 		</section>
 		<br>
 		<br>
@@ -52,5 +28,6 @@
             <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=dead%20OR%20death%20OR%20suicide%20OR%20murdered%20OR%20murder%20OR%20kill%20OR%20died%20OR%20%22passed%20OR%20away%22%20OR%20sick%20OR%20dying%20OR%20terminal%20from%3Aenews%20OR%20from%3Apeople%20OR%20from%3Atmz" data-widget-id="918297506215333888" data-chrome="noheader nofooter">D E A T H</a>
 		</section>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<script src="js/submit.js" type="text/javascript"></script>
 	</body>
 </html>

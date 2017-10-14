@@ -9,13 +9,15 @@ module.exports = function(sequelize, DataTypes) {
         }
       },
       causeofdeath: {
-        type: DataTypes.TEXT,
+        type: DataTypes.STRING,
+        defaultValue: "poisoning",
         allowNull: false,
-        len: [1]
+        validate: {
+          len: [1]
+        }
       },
       deathdate: {
-        type: DataTypes.STRING,
-        defaultValue: "Personal"
+        type: DataTypes.DATEONLY
       }
     });
     return Celebrity;
