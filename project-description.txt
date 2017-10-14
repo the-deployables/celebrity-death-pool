@@ -31,6 +31,8 @@ Vue.js?
 
 * Meet good quality coding standards (indentation, scoping, naming).
 
+
+
 ### Suggestions
 
 Your project _should_:
@@ -44,6 +46,11 @@ Your project _should_:
 * Use an existing public dataset to power the database
 
 * Create a migration strategy for sharing data across team members.
+
+
+###nice to haves
+
+* Check wikipedia to see if celeb is already dead
 
 
 ### Testing Suggestions
