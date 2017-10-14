@@ -9,116 +9,34 @@
 </head>
 
 <body background="../images/darkness.png" style="height: 100%">
-  <div class="modal fade">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Welcome to Celebrity Death Pool!</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>Ever wondered during a movie on Lifetime if that actor from the eighties is still alive! Now you don't have to! We have an updated database of all celebrities that have met their maker, and give you the chance to make a predicition for who will make their next home Forest Lawn Memorial Park!</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Okay</button>
-          </div>
-        </div>
-      </div>
-    </div>
-<!--    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img alt="Brand" src="..."> </a>           
-          </div>
-      
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Predictions</a></li>
-              <li><a href="#">Obituaries</a></li>
-              <li><a href="#">Scoop or Spoof?</a></li>
-              
-            </ul>
-            <form class="navbar-form navbar-left">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Is this celeb dead?">
-              </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-          </div>
-        </div>
-      </nav>-->
-
       <div class="container-fluid" style="margin-top:20px">
         <div class="row">
           <div class="col-md-8">
             <div class="panel panel-default">
-              <div class="panel-heading">Latest Predictions</div>
-              <div class="panel-body">
-                <p>Latest Predictions from people who have nothing else better to do than think 
-                  about who is gonna die next. Better not pick Betty White, you jerk!</p>
-              </div>
-            
-              <!-- Table -->
-              <table class="table">
-                  <tr>
-                      <th>Celebrity</th>
-                      <th>Prediction Date</th> 
-                      <th>Cause of Death</th>
-                      <th>Submitted By</th>
-                    </tr>
-                    <tr>
-                        <td>Kirk Cameron</td>
-                        <td>March 5, 2017</td> 
-                        <td>Ham Sandwich</td>
-                        <td>Yo Momma</td>
-                      </tr>        
-              </table>
-            </div>
-          </div>  
-          <div class="col-md-4">                
-            <div class="panel panel-default">
-                <div class="panel-heading">Celebrity RSS Feed</div>
-                <div class="panel-body">
-                   Some shiz about celebs
-                </div>
-            </div>             
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8">
-            <div class="panel panel-default">
-                <div class="panel-heading">
+              <div class="panel-heading">
                   <h3 class="panel-title"><strong>Make a Prediction</strong></h3>
-                </div>
-                <div class="panel-body">
-                  <form method="POST" role="form">
+              </div>
+              <div class="panel-body">
+                  <form method="post" role="form">
       
                     <div class="form-group">
-                      <label for="celeb-name">Celeb Name</label>
-                      <input type="text" class="form-control" id="celeb-name">
+                      <label for="name">Celeb Name</label>
+                      <input type="text" class="form-control" id="name">
                     </div>
       
                     <div class="form-group">
-                      <label for="prediction-date">Prediction Date</label>
-                      <input type="text" class="form-control" id="prediction-date">
+                      <label for="causeofdeath">Cause of Death</label>
+                      <input type="text" class="form-control" id="causeofdeath">
                     </div>
       
                     <div class="form-group">
-                      <label for="cause-death">Cause of Death</label>
-                      <input type="text" class="form-control" id="cause-death">
+                      <label for="deathdate">Date of Death</label>
+                      <input type="text" class="form-control" id="deathdate">
                     </div>
       
                     <div class="form-group">
-                      <label for="user-name">Your Name</label>
-                      <input type="text" class="form-control" id="user-name">
+                      <label for="username">Your Name</label>
+                      <input type="text" class="form-control" id="username">
                     </div>
       
                   </form>
@@ -128,15 +46,33 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
+          <div class="row">
+            <div class="col-lg-12">
                 <div class="panel panel-default">
-                    <div class="panel-body" style="text-align:center; font-size:24pt">
-                      In Memoriam
-                      <img src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwieptf4qvDWAhUE6yYKHdFFBsIQjRwIBw&url=https%3A%2F%2Fwww.newyorker.com%2Fculture%2Fculture-desk%2Ffree-falling-with-tom-petty&psig=AOvVaw0lEIBje1kROr0y9aOBwI-P&ust=1508078105509330"
-                    </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Most Recent Predictions</h3>
+                  </div>
+                  <div class="panel-body" id="recent-predictions">
+                    <h2 id="celebName-display"></h2>
+                    <h4 id="dod-display"></h4>
+                    <h4 id="cod-display"></h4>
+                    <p id="userName-display"></p>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+            
+          <div class="col-md-4">                
+            <div class="panel panel-default">
+                <div class="panel-heading">Breaking News</div>
+                <div class="panel-body">
+                    <section id="twitterwidget">
+                        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=dead%20OR%20death%20OR%20suicide%20OR%20murdered%20OR%20murder%20OR%20kill%20OR%20died%20OR%20%22passed%20OR%20away%22%20OR%20sick%20OR%20dying%20OR%20terminal%20from%3Aenews%20OR%20from%3Apeople%20OR%20from%3Atmz" data-widget-id="918297506215333888" data-chrome="noheader nofooter">D E A T H</a>
+                    </section>
+                </div>
+            </div>             
+          </div>
         </div>
       </div>
       
@@ -171,4 +107,6 @@
                 </SCRIPT>
         </div>
       </div>//-->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </body>
+</html>
